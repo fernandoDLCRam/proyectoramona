@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, 'Josefin Sans', sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, "Josefin Sans",
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -25,7 +26,7 @@ a:hover {
   color: #535bf2;
 }
 
-.background-image{
+.background-image {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask5505%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(253%2c 255%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M1488 560L0 560 L0 484.38Q54.14 418.52%2c 120 472.67Q169.86 402.53%2c 240 452.4Q317.38 409.78%2c 360 487.17Q411.76 418.94%2c 480 470.7Q531.41 402.11%2c 600 453.52Q651.8 433.32%2c 672 485.12Q700.67 441.8%2c 744 470.47Q794.06 400.53%2c 864 450.59Q916.15 430.75%2c 936 482.9Q966.22 441.12%2c 1008 471.34Q1057.15 400.49%2c 1128 449.64Q1203.91 405.55%2c 1248 481.46Q1299.09 412.55%2c 1368 463.64Q1420.66 396.3%2c 1488 448.96z' fill='rgba(177%2c 177%2c 177%2c 1)'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 486.5Q63.89 430.39%2c 120 494.29Q162.47 464.76%2c 192 507.24Q213.98 457.22%2c 264 479.19Q306.47 449.66%2c 336 492.13Q378.39 462.52%2c 408 504.92Q430.57 455.49%2c 480 478.06Q558.49 436.55%2c 600 515.04Q626.2 469.24%2c 672 495.44Q725.67 429.11%2c 792 482.78Q842.74 461.51%2c 864 512.25Q916.32 444.56%2c 984 496.88Q1014.86 455.74%2c 1056 486.59Q1126.54 437.13%2c 1176 507.67Q1215.68 475.36%2c 1248 515.04Q1272.2 467.25%2c 1320 491.45Q1385.37 436.81%2c 1440 502.18Q1465.11 455.29%2c 1512 480.4z' fill='rgba(211%2c 211%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 534.05Q54.99 469.04%2c 120 524.03Q171.33 455.36%2c 240 506.68Q314.76 461.44%2c 360 536.19Q410.53 466.73%2c 480 517.26Q533.68 450.94%2c 600 504.63Q672.09 456.72%2c 720 528.81Q785.27 474.08%2c 840 539.35Q884.5 463.85%2c 960 508.35Q1027.84 456.19%2c 1080 524.03Q1123.21 495.24%2c 1152 538.45Q1198.84 465.29%2c 1272 512.12Q1315.26 483.38%2c 1344 526.65Q1411.06 473.71%2c 1464 540.77z' fill='rgba(221%2c 221%2c 221%2c 1)'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 567.72Q22.28 518%2c 72 540.29Q137.89 486.18%2c 192 552.07Q234.73 522.8%2c 264 565.52Q311.03 492.55%2c 384 539.57Q427.32 510.89%2c 456 554.22Q499.58 525.8%2c 528 569.38Q549.37 518.75%2c 600 540.11Q641.04 509.15%2c 672 550.2Q714.62 520.82%2c 744 563.44Q766.74 514.18%2c 816 536.92Q859.22 508.14%2c 888 551.36Q929.59 520.95%2c 960 562.54Q982.86 513.4%2c 1032 536.26Q1099.01 483.27%2c 1152 550.28Q1197.77 524.05%2c 1224 569.82Q1243.72 517.54%2c 1296 537.26Q1364.06 485.32%2c 1416 553.37Q1457.14 522.51%2c 1488 563.66z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask5505'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-position: center;
   background-size: cover;
@@ -49,7 +50,7 @@ h1 {
 
 h2 {
   font-size: 2.6em;
-  font-family: 'Josefin Sans',sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1.1;
   color: #93958b;
 }
@@ -73,7 +74,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 20px;
-  width: 30%;
+  width: 40%;
 }
 button:hover {
   border-color: #646cff;
