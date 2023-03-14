@@ -1,0 +1,12 @@
+[
+  {
+    "id": "boy",
+    "label": "boy",
+    "value": 100
+  },
+  {
+    "id": "girl",
+    "label": "girl",
+    "value": 200
+  }
+]
