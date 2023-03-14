@@ -1,12 +1,16 @@
 import { ResponsivePie } from "@nivo/pie";
-import oJson from "../data/votacion.json";
-
-import React from "react";
+import { RutaApi } from "../api/url";
+import React, { useEffect, useState } from "react";
 
 const BarChart = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    RutaApi.get("/voto").then((voto) => setData(voto.data[0]));
+  }, []);
+  console.log(data);
   return (
     <ResponsivePie
-      data={oJson}
+      data={data}
       margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
       innerRadius={0.5}
       padAngle={0.7}
