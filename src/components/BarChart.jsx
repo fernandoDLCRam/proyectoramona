@@ -4,7 +4,6 @@ import oJson from "../data/votacion.json";
 import React from "react";
 
 const BarChart = () => {
-  console.log(oJson);
   return (
     <ResponsivePie
       data={oJson}
