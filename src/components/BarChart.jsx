@@ -7,7 +7,6 @@ const BarChart = () => {
   useEffect(() => {
     RutaApi.get("/voto").then((voto) => setData(voto.data[0]));
   }, []);
-  console.log(data);
   return (
     <ResponsivePie
       data={data}

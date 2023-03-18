@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import BarChart from "../components/BarChart";
 import Landing from "../components/Landing";
 
@@ -9,6 +9,7 @@ const Router = () => {
       <Route>
         <Route path="/" element={<Landing />} />
         <Route path="/grafico" element={<BarChart />} />
+        <Route path="*" element={<Navigate to={"/"} />} />
       </Route>
     </Routes>
   );
