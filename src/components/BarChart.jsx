@@ -9,6 +9,8 @@ const BarChart = () => {
   }, []);
   return (
     <ResponsivePie
+      enableArcLinkLabels={false}
+      theme={{ fontSize: 40, fontFamily: "BOLD" }}
       data={data}
       margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
       innerRadius={0.5}
@@ -34,8 +36,8 @@ const BarChart = () => {
           id: "dots",
           type: "patternDots",
           background: "inherit",
-          color: "rgb(117,148,204)",
-          size: 4,
+          color: "rgba(255, 255, 255, 0.3)",
+          size: 6,
           padding: 1,
           stagger: true,
         },
@@ -43,49 +45,26 @@ const BarChart = () => {
           id: "lines",
           type: "patternLines",
           background: "inherit",
-          color: "rgb(244,156,180)",
+          color: "rgb(252,207,213)",
           rotation: -45,
           lineWidth: 6,
           spacing: 10,
         },
       ]}
+      colors={["#7594cc", "#f49cb4"]}
+      colorBy="index"
       fill={[
         {
           match: {
-            id: "boy",
+            label: "nino",
           },
           id: "dots",
         },
         {
           match: {
-            id: "girl",
+            id: "nina",
           },
           id: "lines",
-        },
-      ]}
-      legends={[
-        {
-          anchor: "bottom",
-          direction: "row",
-          justify: false,
-          translateX: 0,
-          translateY: 56,
-          itemsSpacing: 0,
-          itemWidth: 100,
-          itemHeight: 18,
-          itemTextColor: "#999",
-          itemDirection: "left-to-right",
-          itemOpacity: 1,
-          symbolSize: 18,
-          symbolShape: "circle",
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemTextColor: "#000",
-              },
-            },
-          ],
         },
       ]}
     />
