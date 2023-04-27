@@ -54,17 +54,16 @@ h2 {
     filter: drop-shadow(0 0 2em #61dafbaa);
   }
 }
-
+.barDiv {
+  margin: 20px;
+}
+.barBox {
+  height: 75vh;
+}
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
-}
-.barDiv {
-  margin: 20px;
-}
-.barBox {
-  height: 75vh;
 }

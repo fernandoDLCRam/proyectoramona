@@ -52,6 +52,15 @@ const Landing = () => {
         <div>
           <button onClick={clickAsistencia}>Confirmar asistencia</button>
         </div>
+        <div>
+          <button
+            onClick={() => {
+              oNavigate("/itinerario");
+            }}
+          >
+            Itinerario
+          </button>
+        </div>
       </div>
     </div>
   );
