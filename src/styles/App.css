@@ -62,4 +62,9 @@ h2 {
 .read-the-docs {
   color: #888;
 }
-
+.barDiv {
+  margin: 20px;
+}
+.barBox {
+  height: 75vh;
+}

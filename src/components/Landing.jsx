@@ -9,12 +9,12 @@ const Landing = () => {
   const oNavigate = useNavigate();
   const clickAsistencia = () => {
     window.open(
-      "https://api.whatsapp.com/send?phone=8588339416&text=Confirmo asistencia",
+      "https://api.whatsapp.com/send?phone=6642802019&text=Confirmo asistencia",
       "_blank"
     );
   };
   const clickUbicacion = () => {
-    window.open("https://goo.gl/maps/QXRnMq3eThEkQXXV8", "_blank");
+    window.open("https://maps.app.goo.gl/byubk7d6Y21oKEYAA", "_blank");
   };
   const clickBoy = () => {
     RutaApi.put("/voto", { oVotoId: 1 }).then(oNavigate("/grafico"));
