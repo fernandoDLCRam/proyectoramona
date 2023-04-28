@@ -9,7 +9,7 @@ const Landing = () => {
   const oNavigate = useNavigate();
   const clickAsistencia = () => {
     window.open(
-      "https://api.whatsapp.com/send?phone=6642802019&text=Confirmo asistencia",
+      "https://api.whatsapp.com/send?phone=526642802019&text=Confirmo asistencia",
       "_blank"
     );
   };
