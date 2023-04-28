@@ -72,12 +72,18 @@ h3 {
 .cardlist {
   /* Add shadows to create the "cardlist" effect */
   transition: 0.3s;
-  color: #93958b;
+  color: #fff;
+  background-color: #7594cc;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  max-width: 60%;
+  margin-left: 16%;
 }
 
 /* On mouse-over, add a deeper shadow */
 .cardlist:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f49cb4;
 }
 
 /* Add some padding inside the cardlist container */

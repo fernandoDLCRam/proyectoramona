@@ -9,20 +9,19 @@ const Itinerario = () => {
   console.log(data);
   return (
     <div className="center">
-      <h2>Ven a nuestra fiesta para revelar el sexo del bebé</h2>
-      <hr />
-
       <div className="card">
+        <h2>Ven a nuestra fiesta para revelar el sexo del bebé</h2>
+        <hr />
         <ol>
           {data.map((d) => {
             return (
               <li>
-                <div className="cardlist">
+                <div className="cardlist ">
                   <div className="container">
-                    <h3>
+                    <h4>
                       {d.titulo}: <br />
                       {d.hora}
-                    </h3>
+                    </h4>
                   </div>
                 </div>
               </li>
