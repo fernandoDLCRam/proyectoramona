@@ -17,10 +17,14 @@ const Itinerario = () => {
           {data.map((d) => {
             return (
               <li>
-                <h2>
-                  {d.titulo}: <br />
-                  {d.hora}
-                </h2>
+                <div className="cardlist">
+                  <div className="container">
+                    <h3>
+                      {d.titulo}: <br />
+                      {d.hora}
+                    </h3>
+                  </div>
+                </div>
               </li>
             );
           })}

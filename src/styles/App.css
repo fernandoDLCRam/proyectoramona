@@ -21,6 +21,12 @@ h2 {
   line-height: 1.1;
   color: #93958b;
 }
+h3 {
+  font-size: 1.6em;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.1;
+  color: #93958b;
+}
 @media only screen and (max-width: 530px) {
   h2 {
     font-size: 2em;
@@ -63,7 +69,21 @@ h2 {
 .card {
   padding: 2em;
 }
+.cardlist {
+  /* Add shadows to create the "cardlist" effect */
+  transition: 0.3s;
+  color: #93958b;
+}
 
+/* On mouse-over, add a deeper shadow */
+.cardlist:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the cardlist container */
+.container {
+  padding: 2px 16px;
+}
 .read-the-docs {
   color: #888;
 }
