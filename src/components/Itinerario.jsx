@@ -6,7 +6,6 @@ const Itinerario = () => {
   useEffect(() => {
     RutaApi.get("/itinerario").then((voto) => setData(voto.data[0]));
   }, []);
-  console.log(data);
   return (
     <div className="center">
       <div className="card">
