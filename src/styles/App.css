@@ -19,13 +19,13 @@ h2 {
   font-size: 2.6em;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.1;
-  color: #93958b;
+  color: black;
 }
 h3 {
   font-size: 1.6em;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.1;
-  color: #93958b;
+  color: black;
 }
 @media only screen and (max-width: 530px) {
   h2 {
@@ -92,4 +92,37 @@ h3 {
 }
 .read-the-docs {
   color: #888;
+}
+.table-with-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.side-image {
+  width: 150px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.table-container {
+  flex: 1;
+}
+
+@media (max-width: 768px) { /* Para pantallas con un ancho menor a 768px */
+  .side-image {
+    display: none;
+  }
+}
+
+.inverted-image-horizontal {
+  transform: scaleX(-1);
 }
