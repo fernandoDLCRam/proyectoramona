@@ -11,11 +11,12 @@ const Landing = () => {
   const [invitados, setInvitados] = useState([]);
   const [form, setForm] = useState({ nombre: "", correo: "", telefono: "" });
   const [emailExists, setEmailExists] = useState(false);
+  const [phoneExists, setPhoneExists] = useState(false);
   const oNavigate = useNavigate();
 
   useEffect(() => {
-    RutaApi.get("/invitados").then((response) => {
-      setInvitados(response.data);
+    RutaApi.get("/invitado/getInvitados").then((response) => {
+      setInvitados(response.data[0]);
     });
   }, []);
 
@@ -27,14 +28,19 @@ const Landing = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const found = invitados.some((inv) => inv.correo === form.correo);
+    const foundPhone = invitados.some((inv) => inv.telefono === form.telefono);
 
     if (found) {
       setEmailExists(true);
+    }else if(foundPhone){
+      setPhoneExists(true);
     } else {
       //NOTE: /asistencia es el Endpoint para hacer POST del formulario rellenado en la pagina
-      RutaApi.post("/asistencia", form).then(() => {
+      RutaApi.post("/invitado/postInvitados", form).then(() => {
+        console.log(form)
         alert("¡Gracias por confirmar tu asistencia!");
         setEmailExists(false);
+        setPhoneExists(false);
         setForm({ nombre: "", correo: "", telefono: "" });
       });
     }
@@ -75,6 +81,9 @@ const Landing = () => {
             <h3>Confirma tu asistencia</h3>
             {emailExists && (
               <p style={{ color: "red" }}>El correo ya está registrado.</p>
+            )}
+            {phoneExists && (
+              <p style={{ color: "red" }}>El telefono ya está registrado.</p>
             )}
             <form onSubmit={handleSubmit} style={formStyle}>
               <label style={labelStyle}>

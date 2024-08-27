@@ -14,8 +14,10 @@ const Itinerario = () => {
   useEffect(() => {
     //NOTE: Endpoint para obtener a todos los invitados, de ser necesario cambiar "/invitados"
     // por el endpoint necesario====================================
-    RutaApi.get("/invitados").then((response) => {
-      setInvitados(response.data);
+    RutaApi.get("/invitado/getInvitados").then((response) => {
+      console.log(response.data[0])
+      setInvitados(response.data[0]);
+      
     });
   }, []);
 
@@ -40,8 +42,7 @@ const Itinerario = () => {
             </thead>
             <tbody>
               {invitados.map((inv, index) => (
-                //NOTE: .map es un Foreach, en este punto se despliegan los datos de los objetos
-                // obtenidos del .get /invitados
+                
                 <tr key={index}>
                   <td>{inv.nombre}</td>
                   <td>{inv.correo}</td>
